@@ -1,0 +1,4 @@
+Item Number	 Item Name		 	Unit	 Tax	 subtotal
+______________	 ___________________________  ______ _________ __________
+36		Banana				5.00    0.00      1.65
+301		Fruit-Can-Peach-Dole-15oz				1.00    0.20      3.44
