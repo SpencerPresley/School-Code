@@ -1,0 +1,72 @@
+LAB 2 COSC 350
+Spencer Presley
+
+Task 1:
+	1)
+		\[\e]0;\u@\h:
+	
+	2)
+		EDITOR: No Value
+		HOME: /mnt/linuxlab/home/spresley1
+		HOSTNAME: hpcl2-1
+		LD_LIBRARY_PATH: No Value
+		LESS: No Value
+		MAIL: No Value
+		MANPATH: No Value
+		MORE: No Value
+		PAGER: No Value
+		PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:~/bin:/usr/local/cuda/bin:/opt/hadoop-3.3.3/bin:/opt/hadoop-3.3.3/sbin:/opt/ompi/bin:/opt/pmix/bin
+		PWD: /mnt/linuxlab/home/spresley1
+		SHELL: /bin/bash
+		TERM: xterm-256color
+		USER: spresley1
+
+Task 2:
+	
+	1)
+		Command to save prompt:
+			PS1_Original=$PS1
+	2)
+		$PS1="[COSC350 \W]:"
+	
+	3)
+		[COSC350 lab2]:PS1=$PS1_Original
+
+Task 3:
+	Nothing to write
+
+Task 4:
+	
+	1)
+		ls f 2>bar
+	
+	2)
+		ls f 2>/dev/null
+	
+	3)
+		echo -e "3\n5\n3\n2\n1" > foo
+	
+	4)
+		cat foo > bar
+	
+	5)
+		sort < foo
+	
+	6)
+		sort < foo > bar
+
+Task 5:
+	
+	1)
+		a) created 100.cpp file and wrote a script to loop through number 1-100
+		b) compiled and created an executable for the 100.cpp file
+		c) used command: ./100 > numbs
+
+	2)
+		Output: 100 100 292
+		This means 100 new lines were printed, 100 words were present, and 292 bytes in the file
+
+	3)
+	
+
+	
