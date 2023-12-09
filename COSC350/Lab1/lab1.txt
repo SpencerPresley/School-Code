@@ -1,0 +1,174 @@
+Task 1:
+	/usr/include
+
+Task 2:
+	../dev
+	/bin/ls
+
+Task 3:
+
+	3.2a)
+		User: Read + Write
+		Group: Read
+		Others: Read
+	
+	3.2b)
+		Owner: spresley1 (me)
+	
+	3.2c)
+		Group associated: 'students'
+	
+	3.2d)
+		Yes I am in group 'students'
+	3.2e)
+		'students'
+	
+Task 4)
+	
+  4.2)
+		ls -a = "do not ignore entries starting with ."
+		ls -l = "use a long listing format"
+		ls -R = "list subdirectires recursively"
+	
+  4.3)
+		
+	ls
+		cosc220  cosc320  cosc350  Desktop  Documents  Downloads  foo  Music  Pictures  Public  snap  Templates  Videos
+
+	ls -l
+		total 7
+		drwxr-xr-x 5 spresley1 students 5 Oct 17  2022 cosc220
+		drwxr-xr-x 4 spresley1 students 4 Feb 22  2023 cosc320
+		drwxr-xr-x 3 spresley1 students 3 Sep  5 09:33 cosc350
+		drwxr-xr-x 2 spresley1 students 4 Sep 13  2022 Desktop
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Documents
+		drwxr-xr-x 2 spresley1 students 4 Mar 29 11:54 Downloads
+		-rw-r--r-- 1 spresley1 students 0 Sep  5 09:49 foo
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Music
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Pictures
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Public
+		drwx------ 3 spresley1 students 3 Sep 27  2022 snap
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Templates
+		drwxr-xr-x 2 spresley1 students 2 Sep 13  2022 Videos
+		
+	ls -a
+		.              .bash_logout  .config  cosc350  Documents  .gnupg      .kde      Music     .pki      snap       .Xauthority
+		..             .bashrc       cosc220  Desktop  Downloads  .gtkrc-2.0  .local    .nv       .profile  Templates  .xsession-errors
+		.bash_history  .cache        cosc320  .dmrc    foo        .java       .mozilla  Pictures  Public    Videos     .xsession-errors.old
+
+  4.4)
+  	
+	time 1 (user time) : no time 1
+	time 2 (system call) : time - get time in seconds
+
+  4.5)
+  	
+	man man
+		NAME: man - an interface to the system reference manuals
+
+Task 5)
+	
+	5.2) 
+		result of pwd: /mnt/linuxlab/home/spresley1
+ 
+	5.3)
+		cd ..
+	
+	5.4)
+		result of pwd: /mnt/linuxlab/home
+	
+	5.5)
+		
+		permissions of home directory for spresley1 (me) : drwx------ (directory perms: read, write, execute)
+
+Task 6)
+	
+	6.1)
+		file type: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=31c321f9f0c1f86a379f7efaaeb75f707998f27f, for GNU/Linux 3.2.0, stripped
+
+	6.2)
+		file type: empty
+	
+	6.3)
+		file type: ASCII text
+	
+	6.4)
+		file type: directory
+	
+Task 7)
+
+	7.4)
+		command used: head -n 5 ~/.bash_history
+	
+	7.5)
+		command used: tail ~/.bash_history
+
+Task 8)
+
+	8.1)
+		command used: cp ~/.bash_history ~/dotbashhistory
+	
+	8.2)
+		do not need directory permissions, need read and write permissions
+	
+	8.3)
+		System appears to copy data from .bash_history to dotbashhistory, .bash_history completely replaces any data previously present in dotbashhistory
+	
+	8.4)
+		Permissions remain the same
+		Date on .bash_history: Feb 22 2023
+		Date on copy of .bash_history (dotbashhistory): Sep 5 11:05
+
+		The original file shows the date with the year, the copied file shows Today's date (date when filed) along with the time on that day. It does not show the year, but I imagine after a certain time has passed it would switch time with the year.
+
+	8.5)
+		cp -p ~/.bash_history ~/dotbashhistory
+
+Task 9)
+	
+	9.1)
+		command used: mv ~/dotbashhistory ~/dotbashhistory.old
+
+Task 10)
+
+	10.1)
+		command used: rm ~/dotbashhistory.old
+
+Task 11)
+	
+	11.1)
+		command used: mkdir Foo
+	
+	11.2)
+		perms: total 0
+
+	11.3)
+		command used: 
+			1) cd Foo
+			2) mkdir Bar
+	
+Task 12)
+	
+	12.1)
+		rmdir: failed to remove '/mnt/linuxlab/home/spresley1/Foo': Directory not empty
+	
+	12.2)
+		1) make sure I'm in the Foo directory already, if not go there.
+		2) ensure the 'Bar' directory is empty (as of this lab it is)
+		3) While in the Foo directory invoke: rmdir Bar		
+		4) ensure Bar is gone by using the ls command whilst in the Foo directory
+		5) invoke rmdir ~/Foo
+		6) invoke cd ~ to return home
+
+		Alternatively from home page
+
+		1) rmdir ~/Foo/Bar
+		2) rmdir ~/Foo
+
+		and even simpler
+
+		1) rmdir ~/Foo/Bar ~/Foo
+
+	12.3)
+		command used: rmdir ~/Foo/Bar ~/Foo
+
